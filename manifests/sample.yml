@@ -1,0 +1,9 @@
+releases:
+  name: bosh-vmtools-addon-release
+  version: 0.0.1
+  
+addons:
+- name: vmtools
+  jobs:
+  - name: update-vmtools
+    release: bosh-vmtools-addon-release
