@@ -1,6 +1,6 @@
 ## BOSH VMware Packaged Tools Addon Release
 
-Replaces open-vmtools with VMware's packaged VMwareTools on a given BOSH release:
+Replaces open-vmtools with VMware's packaged VMwareTools on a given BOSH deployment:
 
 **PIVOTAL DOES NOT OFFICIALLY SUPPORT REPLACING THE ```open-vmtools```.  Use at your own risk.
 
@@ -47,3 +47,16 @@ bosh update runtime-config addon.yml
 
 **5** The addon will apply to any new Jobs deployed by bosh.  You must recreate jobs on pre-existing deployments in order for the addon to be processed.
 
+Possible actions to take:
+
+```
+bosh recreate [job] [index]
+```
+
+or 
+
+```
+bosh deployment [deployment.yml]
+bosh deploy
+```
+ 

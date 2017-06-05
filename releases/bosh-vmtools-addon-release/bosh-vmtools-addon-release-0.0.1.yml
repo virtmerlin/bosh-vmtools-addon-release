@@ -1,0 +1,16 @@
+---
+packages:
+- name: vmtools
+  version: 00864c0620bd3afa575aa3d9a6d988aec0cf2dc8
+  fingerprint: 00864c0620bd3afa575aa3d9a6d988aec0cf2dc8
+  sha1: bf927bdf73a5df0c0bcd6214d4d34f1873b9fd68
+  dependencies: []
+jobs:
+- name: update-vmtools
+  version: 2eb4d7ddb58d6aeb39f5f44cb64c3f1b59b50d32
+  fingerprint: 2eb4d7ddb58d6aeb39f5f44cb64c3f1b59b50d32
+  sha1: d9f5c49282b05c5f4e78149c6062536836b95272
+commit_hash: 3afabe9f
+uncommitted_changes: false
+name: bosh-vmtools-addon-release
+version: 0.0.1
