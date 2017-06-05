@@ -1,0 +1,6 @@
+# abort script on any command that exits with a non zero value
+#!/bin/bash -ex
+
+
+tar -xvzf VMwareTools-10.1.0-4449150.tar.gz -C ${BOSH_INSTALL_TARGET}
+echo "Prepared vmtools OK"

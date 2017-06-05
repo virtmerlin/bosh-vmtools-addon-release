@@ -1,0 +1,6 @@
+blobstore:
+  provider: s3
+  options:
+    bucket_name: bosh-vmtools-addon-release
+    endpoint: https://s3.amazonaws.com/bosh-vmtools-addon-release
+final_name: bosh-vmtools-addon-release

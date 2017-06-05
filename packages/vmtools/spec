@@ -1,0 +1,7 @@
+---
+name: vmtools
+
+dependencies:
+
+files:
+  - VMwareTools-10.1.0-4449150.tar.gz #ESX 6.5 GA

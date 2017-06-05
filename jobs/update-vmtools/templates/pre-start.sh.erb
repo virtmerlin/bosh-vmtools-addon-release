@@ -1,0 +1,20 @@
+#!/bin/bash -e
+
+if [[ ! -z $(dpkg -s open-vm-tools | grep Status | grep installed) ]]; then
+        echo "Found open-vmtools, removing ..."
+        dpkg --purge open-vm-tools
+fi
+
+
+echo "Installing VMware Tools..."
+
+VMTOOLS_FILE=/var/vcap/packages/vmtools/vmware-tools-distrib/vmware-install.pl
+
+if [ -f $VMTOOLS_FILE ]; then
+     echo "Found $VMTOOLS_FILE ..."
+     perl $VMTOOLS_FILE -d -f
+     echo "Installed $VMTOOLS_FILE OK"
+
+else
+     echo "error: Cannot find $VMTOOLS_FILE OK"
+fi
